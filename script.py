@@ -30,7 +30,7 @@ X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=0)
 
 # Creating the Ridge Regression model and fitting the data
-model = linear_model.Ridge(alpha=.5)
+model = linear_model.Ridge(alpha=1.0)
 model.fit(X_train, y_train)
 
 # Predicting the target variable for the test set
